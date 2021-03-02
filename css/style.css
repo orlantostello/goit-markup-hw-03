@@ -16,6 +16,21 @@ body {
   color: var(--primary-text-color);
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: o;
+}
+
 .link {
   text-decoration: none;
 }
@@ -33,6 +48,7 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+  outline: 2px solid tomato;
 }
 
 /* ============= COMPONENTS ============= */
@@ -48,6 +64,15 @@ body {
   cursor: pointer;
   color: var(--primary-background-color);
   background-color: var(--accent-color);
+
+  display: inline-block;
+  padding: 10px 32px;
+
+  min-width: 200px;
+  min-height: 50px;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 
 .modal-btn:hover,
@@ -66,6 +91,7 @@ body {
 
   color: var(--title-color);
   background-color: var(--color-filter);
+  border-radius: 4px;
 }
 
 .modal-btn-filter:hover,
@@ -91,6 +117,7 @@ body {
 }
 .logo-dark-theme {
   color: var(--primary-background-color);
+  margin-bottom: 20px;
 }
 
 .titel {
@@ -105,6 +132,10 @@ body {
 /* ============= END COMPONENTS ============= */
 
 /* ============= HEADER ============= */
+
+.border-header {
+  border-bottom: 1px solid #ececec;
+}
 
 .nav-link {
   font-family: var(--main-font);
@@ -144,6 +175,10 @@ body {
 /* ============= HERO ============= */
 .hero {
   background-color: var(--back-color);
+  text-align: center;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 94px;
 }
 
 .hero-title {
@@ -155,11 +190,44 @@ body {
   text-transform: uppercase;
 
   color: var(--primary-background-color);
+
+  margin-bottom: 30px;
 }
 
 /* ============= END HERO ============= */
 
 /* ============= FEATURES ============= */
+
+.features {
+  margin-bottom: 94px;
+}
+
+.hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.container .features-list {
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: space-between;
+}
+
+/* .features-list-item {
+  width: 270px;
+} */
+
+.features-list .features-list-item {
+  width: calc((100%-90px) / 4);
+  margin-right: 30px;
+  margin-left: 0;
+}
+.features-list .features-list-item:last-child {
+  margin-right: 0;
+}
 
 .features-titel {
   font-weight: 700;
@@ -169,6 +237,7 @@ body {
   text-transform: uppercase;
 
   color: var(--title-color);
+  margin-bottom: 10px;
 }
 
 .features-text {
@@ -182,12 +251,68 @@ body {
 
 /* ============= What are we doing ============= */
 
+.we-doing {
+  margin-bottom: 94px;
+}
+
+.we-doing-list {
+  display: flex;
+  /* flex-wrap: wrap; */
+  /* justify-content: space-between; */
+}
+
+.we-doing-list .item {
+  width: calc((100% - 60px) / 3);
+  margin-right: 30px;
+}
+
+.we-doing-list .item:last-child {
+  margin-right: 0;
+}
+
 /* ============= END What are we doing ============= */
 
 /* ============= OUR TEAM ============= */
 
 .team {
   background-color: var(--color-filter);
+}
+
+.titel {
+  margin-bottom: 50px;
+}
+
+.team-list {
+  display: flex;
+  /* flex-wrap: wrap; */
+  /* justify-content: space-between; */
+}
+
+.team-list .team-list-item {
+  width: calc((100% - 90px) / 4);
+  margin-right: 30px;
+  padding-bottom: 30px;
+
+  background: var(--primary-background-color);
+
+  /* text-align: center; */
+
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.team-list .item:nth-child(4n) {
+  margin-right: 0;
+}
+
+.team-list .team-list-item:last-child {
+  margin-right: o;
+}
+
+.team-list img {
+  display: block;
+  margin-bottom: 30px;
 }
 
 .team-list-title {
@@ -198,6 +323,8 @@ body {
   letter-spacing: 0.03em;
 
   color: var(--title-color);
+
+  margin-bottom: 10px;
 }
 
 .team-list-position {
@@ -213,6 +340,9 @@ body {
 
 .footer {
   background-color: var(--back-color);
+
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .address-list-link {
