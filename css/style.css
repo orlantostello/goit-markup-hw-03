@@ -29,7 +29,7 @@ p {
 ul,
 ol {
   margin: 0;
-  padding: o;
+  padding: 0;
 }
 
 img {
@@ -48,62 +48,26 @@ img {
   font-style: normal;
 }
 
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
 .container {
   width: 1230px;
+  margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  margin: 0 auto;
   outline: 2px solid tomato;
 }
 
 /* ============= COMPONENTS ============= */
-
-.modal-btn {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
-  cursor: pointer;
-  color: var(--primary-background-color);
-  background-color: var(--accent-color);
-
-  display: inline-block;
-  padding: 10px 32px;
-
-  min-width: 200px;
-  min-height: 50px;
-
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-}
-
-.modal-btn:hover,
-.modal-btn:focus {
-  background-color: #188ce8;
-  color: var(--primary-background-color);
-}
-
-.modal-btn-filter {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  text-align: center;
-  letter-spacing: 0.03em;
-  cursor: pointer;
-
-  color: var(--title-color);
-  background-color: var(--color-filter);
-  border-radius: 4px;
-}
-
-.modal-btn-filter:hover,
-.modal-btn-filter:focus {
-  background-color: var(--accent-color);
-  color: var(--primary-background-color);
-}
 
 .logo {
   font-family: var(--secondary-font);
@@ -111,6 +75,7 @@ img {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  display: inline-block;
 }
 
 .logo-web {
@@ -119,6 +84,9 @@ img {
 
 .logo-light-theme {
   color: #000000;
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 .logo-dark-theme {
   color: var(--primary-background-color);
@@ -138,11 +106,7 @@ img {
 
 /* ============= HEADER ============= */
 
-.border-header {
-  border-bottom: 1px solid #ececec;
-}
-
-.header {
+.header .container {
   display: flex;
   align-items: center;
 }
@@ -152,14 +116,23 @@ img {
   align-items: center;
 }
 
-.nav-lis {
+.nav-list {
   display: flex;
   align-items: center;
+}
+
+.nav-item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .contact-list {
   display: flex;
   align-items: center;
+  margin-left: auto;
+}
+
+.contact-item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .nav-link {
@@ -169,6 +142,9 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--title-color);
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: block;
 }
 
 .nav-link:hover,
@@ -188,6 +164,9 @@ img {
   letter-spacing: 0.02em;
 
   color: var(--primary-text-color);
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: block;
 }
 
 .contact-link:hover,
@@ -224,20 +203,40 @@ img {
   margin-bottom: 30px;
 }
 
+.modal-btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  color: var(--primary-background-color);
+  background-color: var(--accent-color);
+
+  display: inline-block;
+  padding: 10px 32px;
+
+  min-width: 200px;
+  min-height: 50px;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.modal-btn:hover,
+.modal-btn:focus {
+  background-color: #188ce8;
+  color: var(--primary-background-color);
+}
+
 /* ============= END HERO ============= */
 
 /* ============= FEATURES ============= */
 
 .features {
   margin-bottom: 94px;
-}
-
-.hidden {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
 }
 
 .container .features-list {
@@ -345,7 +344,7 @@ img {
   margin-right: o;
 }
 
-.team-list img {
+.team-list .img {
   display: block;
   margin-bottom: 30px;
 }
@@ -406,6 +405,39 @@ img {
 /* ============= END FOOTER ============= */
 
 /* ============= GALLERY ============= */
+
+.border-header {
+  border-bottom: 1px solid #ececec;
+}
+
+/* .filter-lis {
+  display: flex;
+  justify-content: center;
+} */
+
+.modal-btn-filter {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+
+  color: var(--title-color);
+  background-color: var(--color-filter);
+  border-radius: 4px;
+  padding: 6px 22px;
+  display: inline-block;
+
+  min-width: 73px;
+  min-height: 38px;
+}
+
+.modal-btn-filter:hover,
+.modal-btn-filter:focus {
+  background-color: var(--accent-color);
+  color: var(--primary-background-color);
+}
 
 .gallery-list-title {
   font-weight: 700;
