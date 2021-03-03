@@ -241,13 +241,7 @@ img {
 
 .container .features-list {
   display: flex;
-  /* flex-wrap: wrap; */
-  /* justify-content: space-between; */
 }
-
-/* .features-list-item {
-  width: 270px;
-} */
 
 .features-list .features-list-item {
   width: calc((100%-90px) / 4);
@@ -344,11 +338,9 @@ img {
   margin-right: o;
 }
 
-.team-list .img {
-  display: block;
+.team-list-img {
   margin-bottom: 30px;
 }
-
 .team-list-title {
   font-weight: 500;
   font-size: 16px;
@@ -410,12 +402,17 @@ img {
   border-bottom: 1px solid #ececec;
 }
 
-/* .filter-lis {
+.filter-lis {
   display: flex;
   justify-content: center;
-} */
-
-.modal-btn-filter {
+}
+.filter-item {
+  margin-bottom: 50px;
+}
+.filter-item:not(:last-child) {
+  margin-right: 8px;
+}
+.filter .btn {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -433,10 +430,68 @@ img {
   min-height: 38px;
 }
 
+/* .filter-lis {
+  display: flex;
+  justify-content: center;
+}
+
+
+.modal-btn-filter {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+
+  color: var(--title-color);
+  background-color: var(--color-filter);
+  border-radius: 4px;
+  padding: 6px 22px;
+  display: inline-block;
+
+  min-width: 73px;
+  min-height: 38px;
+} */
+
 .modal-btn-filter:hover,
 .modal-btn-filter:focus {
   background-color: var(--accent-color);
   color: var(--primary-background-color);
+}
+
+.gallery {
+  margin-top: 180px;
+  margin-bottom: 88px;
+}
+
+.gallery-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gallery-list-item {
+  width: calc((100% - 60px) / 3);
+  margin-right: 30px;
+  padding-bottom: 30px;
+
+  background: var(--primary-background-color);
+}
+
+.gallery-list-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.gallery-list-item:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+
+.portfolio-card {
+  padding: 20px 24px;
+  background: #ffffff;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
 }
 
 .gallery-list-title {
