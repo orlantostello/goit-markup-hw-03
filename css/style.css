@@ -26,9 +26,14 @@ p {
   margin: 0;
 }
 
-ul {
+ul,
+ol {
   margin: 0;
   padding: o;
+}
+
+img {
+  display: block;
 }
 
 .link {
@@ -135,6 +140,26 @@ ul {
 
 .border-header {
   border-bottom: 1px solid #ececec;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-lis {
+  display: flex;
+  align-items: center;
+}
+
+.contact-list {
+  display: flex;
+  align-items: center;
 }
 
 .nav-link {
@@ -283,6 +308,11 @@ ul {
   background-color: var(--color-filter);
 }
 
+.team .container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .titel {
   margin-bottom: 50px;
 }
@@ -346,6 +376,11 @@ ul {
 .footer {
   background-color: var(--back-color);
 
+  /* padding-top: 60px;
+  padding-bottom: 60px; */
+}
+
+.footer .container {
   padding-top: 60px;
   padding-bottom: 60px;
 }
