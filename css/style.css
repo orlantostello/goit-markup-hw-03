@@ -64,7 +64,7 @@ img {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
 }
 
 /* ============= COMPONENTS ============= */
@@ -366,9 +366,6 @@ img {
 
 .footer {
   background-color: var(--back-color);
-
-  /* padding-top: 60px;
-  padding-bottom: 60px; */
 }
 
 .footer .container {
@@ -402,7 +399,7 @@ img {
   border-bottom: 1px solid #ececec;
 }
 
-.filter-lis {
+.filter-list {
   display: flex;
   justify-content: center;
 }
@@ -412,7 +409,7 @@ img {
 .filter-item:not(:last-child) {
   margin-right: 8px;
 }
-.filter .btn {
+.filter .modal-btn-filter {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -429,30 +426,6 @@ img {
   min-width: 73px;
   min-height: 38px;
 }
-
-/* .filter-lis {
-  display: flex;
-  justify-content: center;
-}
-
-
-.modal-btn-filter {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  text-align: center;
-  letter-spacing: 0.03em;
-  cursor: pointer;
-
-  color: var(--title-color);
-  background-color: var(--color-filter);
-  border-radius: 4px;
-  padding: 6px 22px;
-  display: inline-block;
-
-  min-width: 73px;
-  min-height: 38px;
-} */
 
 .modal-btn-filter:hover,
 .modal-btn-filter:focus {
