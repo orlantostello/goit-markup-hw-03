@@ -402,12 +402,15 @@ img {
   display: flex;
   justify-content: center;
 }
+
 .filter-item {
   margin-bottom: 50px;
 }
+
 .filter-item:not(:last-child) {
   margin-right: 8px;
 }
+
 .modal-btn-filter {
   font-weight: 500;
   font-size: 16px;
