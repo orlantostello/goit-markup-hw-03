@@ -423,8 +423,8 @@ img {
   padding: 6px 22px;
   display: inline-block;
 
-  /* min-width: 73px;
-  min-height: 38px; */
+  min-width: 73px;
+  min-height: 38px;
 }
 
 .modal-btn-filter:hover,
