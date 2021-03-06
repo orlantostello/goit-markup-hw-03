@@ -182,8 +182,6 @@ img {
 .hero {
   background-color: var(--back-color);
   text-align: center;
-  padding-top: 0;
-  padding-bottom: 0;
 }
 
 .hero .container {
@@ -221,7 +219,7 @@ img {
 
   min-width: 200px;
   /* min-height: 50px; */
-
+  border-style: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
@@ -440,6 +438,7 @@ img {
 
   min-width: 73px;
   /* min-height: 38px; */
+  border-style: none;
 }
 
 .modal-btn-filter:hover,
