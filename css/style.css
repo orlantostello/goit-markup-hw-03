@@ -327,12 +327,13 @@ img {
 }
 
 .team-list .team-list-item:last-child {
-  margin-right: o;
+  margin-right: 0;
 }
 
 .team-card {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  /* padding-top: 30px;
+  padding-bottom: 30px; */
+  padding: 30px 40px;
   text-align: center;
 }
 
@@ -372,6 +373,14 @@ img {
   padding-bottom: 60px;
 }
 
+.address-list-item {
+  margin-bottom: 9px;
+}
+
+.address-list-item:last-child {
+  margin-bottom: 0;
+}
+
 .address-list-link {
   font-weight: 400;
   font-size: 14px;
@@ -403,7 +412,11 @@ img {
   justify-content: center;
 }
 
-.filter-item {
+/* .filter-item {
+  margin-bottom: 50px;
+} */
+
+.filter-list {
   margin-bottom: 50px;
 }
 
@@ -440,8 +453,8 @@ img {
 }
 
 .gallery {
-  padding-top: 180px;
-  padding-bottom: 88px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 /* .gallery-list {
@@ -498,6 +511,7 @@ img {
   letter-spacing: 0.06em;
 
   color: var(--title-color);
+  margin-bottom: 4px;
 }
 
 .gallery-list-position {
